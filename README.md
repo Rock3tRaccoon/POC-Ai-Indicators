@@ -1,12 +1,12 @@
 # TradingView-Dev-Sandbox
-This repo Demonstrates the study of Deep Learning Models for finanical markets.
+This repo Demonstrates the study of Learning Models for finanical markets.
 
 # DISCLAIMER
 I AM NOT Responsible for any damages, finanical loss, or criminal intent.
-This NN may and will generate false signals, This script is NOT Financial Advice. Any of the 'BackTested' Strategies are backtested by me, and only me, based on this, user discretion is advised.
+This Model may and will generate false signals, This script is NOT Financial Advice. Any of the 'BackTested' Strategies are backtested by me, and only me, based on this, user discretion is advised.
 
 Future Releases:
-In the future, changes to the preproccessing, data collection, and possibly converting RSI to Volume. This NN is in it's very early stages, Understand whole revisions of the code and trained models will be done. Enjoy the Journal!
+In the future, changes to the preproccessing, data collection, and possibly converting RSI to Volume. This Model is in it's very early stages, Understand whole revisions of the code and trained models will be done. Enjoy the Journal!
 
 
 KEY:
