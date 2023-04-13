@@ -10,9 +10,13 @@ In the future, changes to the preproccessing, data collection, and possibly conv
 
 
 KEY:
+
 CBT - Completed and BackTested
+
 POC - Proof of Concept
+
 ML - Machine Learning
+
 NN - Neural Network
 
 
