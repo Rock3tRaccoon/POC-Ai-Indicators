@@ -5,11 +5,11 @@ This repo Demonstrates the study of Deep Learning Models for finanical markets.
 I AM NOT Responsible for any damages, finanical loss, or criminal intent.
 This NN may and will generate false signals, This script is NOT Financial Advice. Any of the 'BackTested' Strategies are backtested by me, and only me, based on this, user discretion is advised.
 
-# Future Releases:
+Future Releases:
 In the future, changes to the preproccessing, data collection, and possibly converting RSI to Volume. This NN is in it's very early stages, Understand whole revisions of the code and trained models will be done. Enjoy the Journal!
 
 
-# KEY:
+KEY:
 CBT - Completed and BackTested
 POC - Proof of Concept
 ML - Machine Learning
@@ -33,14 +33,23 @@ Implementing a voting system to make a combined prediction based on the trained 
 Requirements:
 
 Python 3.x
+
 numpy
+
 pandas
+
 tradingview_ta
+
 scikit-learn
+
 Usage:
 
 Clone the repository.
+
 Install the required packages.
+
 Modify the symbol variable in the script to the desired stock symbol.
+
 Run the script using python main.py.
+
 The script will output the model accuracy for each timeframe and the combined prediction based on the voting system.
