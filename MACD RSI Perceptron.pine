@@ -1,0 +1,38 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Fathhed
+
+
+//version=4
+study("MACD Perceptron Strategy", shorttitle="MP", overlay=true)
+
+// Input parameters
+macdShort = input(12, title="MACD Short Period", type=input.integer)
+macdLong = input(26, title="MACD Long Period", type=input.integer)
+macdSignal = input(9, title="MACD Signal Period", type=input.integer)
+src = close
+
+// Calculating indicators
+[macdLine, signalLine, _] = macd(src, macdShort, macdLong, macdSignal)
+
+// Perceptron model
+perceptron(src1, src2, w1, w2, bias) =>
+    signal = w1 * src1 + w2 * src2 + bias
+    signal >= 0 ? 1 : 0
+
+// Perceptron weights and bias (change these values to adjust the model)
+w1 = 0.5
+w2 = -0.5
+bias = 0.0
+
+// Predictions
+prediction = perceptron(macdLine - signalLine, close, w1, w2, bias)
+
+// Entry conditions
+longEntry = prediction == 1
+shortEntry = prediction == 0
+
+// Plotting
+plotshape(longEntry, title="Long Entry", location=location.belowbar, color=color.green, transp=0, style=shape.triangleup, text="Long")
+plotshape(shortEntry, title="Short Entry", location=location.abovebar, color=color.red, transp=0, style=shape.triangledown, text="Short")
+bgcolor(longEntry ? color.new(color.green, 90) : na, transp=100)
+bgcolor(shortEntry ? color.new(color.red, 90) : na, transp=100)
